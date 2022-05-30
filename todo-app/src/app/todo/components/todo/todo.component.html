@@ -1,0 +1,37 @@
+<ng-container *ngIf="todo">
+  <div class="todo-wrapper">
+    <mat-checkbox
+      [disabled]="readonly"
+      [matTooltip]="todo.doneAt !== undefined ? 'Done at ' + (todo.doneAt | date: 'dd/MM/yyyy HH:mm') : ''"
+      matTooltipPosition="above"
+      class="example-margin"
+      [(ngModel)]="todo.done"
+      (change)="toggleDone.emit()"
+    >
+      <span [ngClass]="{ done: todo.done }">
+        {{ todo.description | truncate: 50 }}
+      </span>
+    </mat-checkbox>
+
+    <button
+      *ngIf="!readonly"
+      matTooltip="Delete todo"
+      matTooltipPosition="above"
+      mat-icon-button
+      (click)="delete.emit()"
+      class="actions"
+    >
+      <mat-icon aria-label="Delete todo icon">delete</mat-icon>
+    </button>
+
+    <button
+      class="go-to-details"
+      matTooltip="Go to todo details"
+      matTooltipPosition="above"
+      mat-icon-button
+      (click)="goToTodoDetails.emit()"
+    >
+      <mat-icon aria-label="Go to todo details icon">link</mat-icon>
+    </button>
+  </div>
+</ng-container>

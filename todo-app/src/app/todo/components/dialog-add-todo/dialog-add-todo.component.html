@@ -1,0 +1,17 @@
+<form #todoForm="ngForm">
+  <h1 mat-dialog-title>New Todo</h1>
+  <div mat-dialog-content>
+    <mat-form-field appearance="fill">
+      <mat-label>What needs to be done?</mat-label>
+      <input matInput name="description" #description="ngModel" [(ngModel)]="todo.description" required cdkTrapFocus />
+      <mat-error *ngIf="description.invalid">Description is required</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions>
+    <button type="button" mat-button (click)="dialogRef.close()">Close</button>
+    <button type="submit" mat-raised-button color="primary" [mat-dialog-close]="todo" [disabled]="todoForm.invalid">
+      Save
+    </button>
+  </div>
+</form>

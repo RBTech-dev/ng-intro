@@ -1,0 +1,23 @@
+:host-context(.no-go-to-details) .go-to-details {
+  display: none;
+}
+
+.todo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.85;
+}
+
+.done-at {
+  font-size: 0.8rem;
+  color: gray;
+  margin-left: 0.35rem;
+}
+
+.actions {
+  margin-left: auto;
+}

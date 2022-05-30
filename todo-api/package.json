@@ -1,0 +1,36 @@
+{
+  "name": "todo-be",
+  "version": "0.0.1",
+  "description": "Todo fastify service",
+  "main": "app.js",
+  "private": true,
+  "engines": {
+    "node": "^14.15.0 || >=16.10.0"
+  },
+  "homepage": "https://github.com/RBTech-dev/ng-introduction",
+  "bugs": "https://github.com/RBTech-dev/ng-introduction/issues",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "standard",
+    "test": "tap \"test/**/*.test.js\"",
+    "format": "standard --fix",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "Fabrizio Fallico",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/autoload": "^4.0.0",
+    "@fastify/sensible": "^4.0.0",
+    "fastify": "^3.0.0",
+    "fastify-cli": "^3.1.0",
+    "fastify-plugin": "^3.0.0"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0",
+    "tap": "^16.1.0"
+  }
+}
