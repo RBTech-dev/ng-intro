@@ -82,3 +82,13 @@ export class SharedModule {}
 ```shell
 ng g c todo-list --inline-template --inline-style --skip-tests
 ```
+
+## PWA
+
+```shell
+ng add @angular/pwa --project todo-app
+npm install --global http-server
+ng build
+ng serve
+http-server -p 8080 -c-1 dist/todo-app --proxy http://localhost:4200 --proxy-options.secure false
+```
