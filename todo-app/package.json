@@ -15,8 +15,8 @@
   },
   "private": true,
   "author": "Fabrizio Fallico",
-  "homepage": "https://github.com/RBTech-dev/ng-introduction",
-  "bugs": "https://github.com/RBTech-dev/ng-introduction/issues",
+  "homepage": "https://github.com/RBTech-dev/ng-intro",
+  "bugs": "https://github.com/RBTech-dev/ng-intro/issues",
   "license": "MIT",
   "dependencies": {
     "@angular/animations": "~13.3.0",
