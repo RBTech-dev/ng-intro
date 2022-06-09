@@ -8,8 +8,8 @@
 
 * Install [`node >= 14`](https://nodejs.org/it/download/)
 * Run `npm install` and `npm start` to bootstrap the server in `localhost:3000`
-* OpenAPI specs: `[docs/Todo_fastify_service.openapi.yml](https://github.com/RBTech-dev/ng-intro/blob/main/todo-api/docs/Todo_fastify_service.openapi.yml)` ([live editor](https://raw.githubusercontent.com/RBTech-dev/ng-intro/main/todo-api/Todo_fastify_service.openapi.yml)
-* [Postman](Postman) collection: `[docs/Todo_fastify_service.postman_collection.json](https://github.com/RBTech-dev/ng-intro/blob/main/todo-api/docs/Todo_fastify_service.postman_collection.json)`
+* OpenAPI specs: [`docs/Todo_fastify_service.openapi.yml`](https://github.com/RBTech-dev/ng-intro/blob/main/todo-api/docs/Todo_fastify_service.openapi.yml) ([swagger editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/RBTech-dev/ng-intro/main/todo-api/docs/Todo_fastify_service.openapi.yml))
+* [Postman](https://www.postman.com/) collection: [`docs/Todo_fastify_service.postman_collection.json`](https://github.com/RBTech-dev/ng-intro/blob/main/todo-api/docs/Todo_fastify_service.postman_collection.json)`
 
 ## Some suggested improvements
 
